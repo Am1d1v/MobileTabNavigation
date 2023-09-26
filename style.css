@@ -28,7 +28,7 @@ body{
         position: absolute;
         top: 0;
         left: 0;
-        height: calc(100% - 55px);
+        height: calc(100% - 60px);
         transition: opacity 0.4s;
     }
 
@@ -48,7 +48,7 @@ nav ul {
   background-color: #fff;
   display: flex;
   list-style-type: none;
-  padding: 0;
+  padding: 17px;
   margin: 0;
 }
 
@@ -57,4 +57,14 @@ nav li {
   cursor: pointer;
   text-align: center;
   flex: 1;
+}
+
+nav ul li p {
+  font-size: 12px;
+  margin: 2px 0;
+  padding: 1px;
+}
+
+nav ul li:hover, nav ul il.active{
+  color: #8e44ad
 }
