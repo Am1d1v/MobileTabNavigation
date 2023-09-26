@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;    
+    background-color: rgba(155, 89, 182, 0.6);
+    } 
+
+.phone {
+    opacity: 1;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #eee;
+    border-radius: 15px;
+    height: 600px;
+    width: 340px;
+}
+
+.phone .content{
+        opacity: 1;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: calc(100% - 55px);
+        transition: opacity 0.4s;
+    }
+
+.phone .content .show {
+  opacity: 0;
+}
+
+nav{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: -10px;
+  width: 103%;
+}
+
+nav ul {
+  background-color: #fff;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  color: #777;
+  cursor: pointer;
+  text-align: center;
+  flex: 1;
+}
