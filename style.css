@@ -22,8 +22,8 @@ body{
     width: 340px;
 }
 
-.phone .content{
-        opacity: 1;
+.content{
+        opacity: 0;
         object-fit: cover;
         position: absolute;
         top: 0;
@@ -32,8 +32,8 @@ body{
         transition: opacity 0.4s;
     }
 
-.phone .content .show {
-  opacity: 0;
+.show {
+  opacity: 1;
 }
 
 nav{
@@ -65,6 +65,6 @@ nav ul li p {
   padding: 1px;
 }
 
-nav ul li:hover, nav ul il.active{
+.active{
   color: #8e44ad
 }
